@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,6 +15,29 @@ const App = () => {
     setActiveSection(section.toLowerCase());
     document.getElementById(section.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '-50% 0px -50% 0px', // triggers when section is centered
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="bg-slate-900 text-gray-100 min-h-screen w-full overflow-x-hidden">

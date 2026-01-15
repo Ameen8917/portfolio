@@ -1,5 +1,6 @@
 // pages/Home.tsx
 import React from 'react';
+import profileImg from '../assets/profile.jpg';
 
 const Home = ({ onNavigate }) => {
   return (
@@ -42,9 +43,17 @@ const Home = ({ onNavigate }) => {
         <div className="flex justify-center">
           <div className="relative">
             <div className="w-80 h-80 rounded-full bg-gradient-to-br from-coral-500 to-orange-600 opacity-20 absolute"></div>
-            <div className="w-80 h-80 rounded-full border-4 border-coral-500 flex items-center justify-center relative">
-              <div className="text-8xl">👨‍💻</div>
+            
+            <div className="w-80 h-80 rounded-full border-4 border-coral-500 flex items-center justify-center relative overflow-hidden">
+              <img
+                src={profileImg}
+                alt="Ameen profile"
+                className="w-full h-full object-cover rounded-full object-center"
+              />
             </div>
+            {/* <div className="w-80 h-80 rounded-full border-4 border-coral-500 flex items-center justify-center relative">
+              <div className="text-8xl">👨‍💻</div>
+            </div> */}
           </div>
         </div>
       </div>
