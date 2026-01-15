@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Custom Coral Theme Colors */
+.text-coral-500 {
+  color: #ff6b6b;
+}
+
+.bg-coral-500 {
+  background-color: #ff6b6b;
+}
+
+.bg-coral-600 {
+  background-color: #ee5a52;
+}
+
+.hover\:bg-coral-600:hover {
+  background-color: #ee5a52;
+}
+
+.hover\:text-coral-500:hover {
+  color: #ff6b6b;
+}
+
+.hover\:border-coral-500:hover {
+  border-color: #ff6b6b;
+}
+
+.border-coral-500 {
+  border-color: #ff6b6b;
+}
+
+.from-coral-500 {
+  --tw-gradient-from: #ff6b6b;
+}
+
+.focus\:border-coral-500:focus {
+  border-color: #ff6b6b;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
