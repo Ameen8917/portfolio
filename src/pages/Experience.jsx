@@ -12,7 +12,7 @@ const Experience = () => {
       'Built REST APIs for core business functionality including authentication, data management, and integrations',
       'Worked on cross-platform mobile applications using React Native',
       'Collaborated closely with product managers and designers to translate business requirements into technical solutions',
-      'Improved application performance and optimized database queries',
+      'Improved application performance by ~30% through query optimization and API refactoring',
       'Participated in code reviews and helped maintain clean, maintainable codebases',
       'Supported deployment and production issues in live environments'
     ]

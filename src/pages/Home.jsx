@@ -1,6 +1,7 @@
 // pages/Home.tsx
 import React from 'react';
-import profileImg from '../assets/profile.jpg';
+import profileImg from '../assets/ameen.png';
+import Avatar from '../components/Avatar';
 
 const Home = ({ onNavigate }) => {
   return (
