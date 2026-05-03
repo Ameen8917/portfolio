@@ -1,43 +1,55 @@
 @import "tailwindcss";
 
-/* Custom Coral Theme Colors */
+/* Electric Blue Theme — matches LinkedIn brand */
 .text-coral-500 {
-  color: #ff6b6b;
+  color: #3b82f6;
 }
 
 .bg-coral-500 {
-  background-color: #ff6b6b;
+  background-color: #3b82f6;
 }
 
 .bg-coral-600 {
-  background-color: #ee5a52;
+  background-color: #2563eb;
 }
 
 .hover\:bg-coral-600:hover {
-  background-color: #ee5a52;
+  background-color: #2563eb;
 }
 
 .hover\:text-coral-500:hover {
-  color: #ff6b6b;
+  color: #60a5fa;
 }
 
 .hover\:border-coral-500:hover {
-  border-color: #ff6b6b;
+  border-color: #3b82f6;
 }
 
 .border-coral-500 {
-  border-color: #ff6b6b;
+  border-color: #3b82f6;
 }
 
 .from-coral-500 {
-  --tw-gradient-from: #ff6b6b;
+  --tw-gradient-from: #3b82f6;
 }
 
 .focus\:border-coral-500:focus {
-  border-color: #ff6b6b;
+  border-color: #3b82f6;
+}
+
+/* Glow effect for profile ring */
+.border-coral-500 {
+  border-color: #3b82f6;
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.25);
 }
 
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #fff;
 }

@@ -31,10 +31,15 @@ const ProjectCard = ({
       </div>
       <div className="flex gap-4">
         {githubUrl && (
-          <button className="bg-coral-500 hover:bg-coral-600 px-4 py-2 rounded text-sm flex items-center gap-2">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-coral-500 hover:bg-coral-600 px-4 py-2 rounded text-sm flex items-center gap-2"
+          >
             <Github size={16} />
             View GitHub
-          </button>
+          </a>
         )}
         {liveUrl && (
           <button className="border border-gray-600 hover:border-coral-500 px-4 py-2 rounded text-sm flex items-center gap-2">
