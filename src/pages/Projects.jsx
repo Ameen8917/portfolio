@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projectsData = [
     {
-      title: '🤖 JobLens AI — Chat With Any Job Description',
+      title: 'JobLens AI — Chat With Any Job Description',
       description: 'AI-powered job description analyzer. Upload your resume + paste any JD → instantly get your match percentage, skill gaps, a tailored cover letter, and interview prep questions.',
       techStack: ['React', 'Node.js', 'OpenAI GPT-4', 'MongoDB Atlas', 'RAG', 'Vector Search'],
       features: [
@@ -32,7 +32,7 @@ const Projects = () => {
     //   liveUrl: '#'
     // },
     {
-      title: '✅ Task Management App',
+      title: 'Task Management App',
       description: 'A full-stack task management application with authentication, role-based access control, and real-time updates.',
       techStack: ['React', 'Node.js', 'MongoDB'],
       features: [

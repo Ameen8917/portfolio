@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -18,9 +17,9 @@ const Navbar = ({ activeSection, onNavigate }) => {
           <div className="text-2xl font-bold text-white cursor-pointer" onClick={() => onNavigate('Home')}>
             Ameen Sayed
           </div>
-          
+
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item}
@@ -32,13 +31,17 @@ const Navbar = ({ activeSection, onNavigate }) => {
                 {item}
               </button>
             ))}
+            {/* Case Study special link */}
+            <button
+              onClick={() => handleNavigate('casestudy')}
+              className="text-xs font-mono border border-coral-500/40 text-coral-500 hover:bg-coral-500/10 px-3 py-1.5 rounded-full transition-colors"
+            >
+              Case Study ↗
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-gray-300"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
+          <button className="md:hidden text-gray-300" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -55,6 +58,12 @@ const Navbar = ({ activeSection, onNavigate }) => {
                 {item}
               </button>
             ))}
+            <button
+              onClick={() => handleNavigate('casestudy')}
+              className="block w-full text-left py-2 text-coral-500 font-mono text-sm"
+            >
+              Case Study ↗
+            </button>
           </div>
         )}
       </div>
