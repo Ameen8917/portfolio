@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Brain, BarChart2, FileText, Mic } from 'lucide-react';
 
-const FeaturedCaseStudy = ({ onViewCaseStudy }) => {
+const FeaturedCaseStudy = () => {
   return (
     <section id="casestudy" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
       <div className="max-w-7xl mx-auto">
@@ -60,12 +61,12 @@ const FeaturedCaseStudy = ({ onViewCaseStudy }) => {
                   ))}
                 </div>
 
-                <button
-                  onClick={onViewCaseStudy}
-                  className="flex items-center gap-2 bg-coral-500 hover:bg-coral-600 text-white px-6 py-3 rounded transition-colors font-medium"
+                <Link
+                  to="/case-study"
+                  className="inline-flex items-center gap-2 bg-coral-500 hover:bg-coral-600 text-white px-6 py-3 rounded transition-colors font-medium"
                 >
                   Read Full Case Study <ArrowRight size={18} />
-                </button>
+                </Link>
               </div>
 
               {/* Right — tech + stats */}

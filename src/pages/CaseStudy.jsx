@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, Layers, Zap, AlertTriangle, CheckCircle, Code2, BookOpen, TrendingUp } from 'lucide-react';
 
-const CaseStudy = ({ onBack }) => {
+const CaseStudy = () => {
+  const navigate = useNavigate();
+  const onBack = () => navigate('/', { state: { scrollTo: 'casestudy' } });
   const techStack = {
     backend: ['Node.js', 'Express', 'TypeScript', 'MongoDB Atlas', 'Google Gemini 1.5 Flash', 'text-embedding-004', 'pdf-parse', 'Zod', 'Multer'],
     frontend: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'Axios', 'React Router v6']
