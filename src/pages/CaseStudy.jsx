@@ -46,32 +46,6 @@ const CaseStudy = () => {
         'Matches → "matched", overlaps → "partial" (0.5 credit), misses → "missing"',
       ]
     },
-    {
-      title: 'Tailwind Not Applying in Vite',
-      problem: [
-        'UI rendered as completely unstyled HTML despite correct component code',
-        'All utility classes were present but none generated in output',
-        'No error thrown — failed silently',
-      ],
-      fix: [
-        'Root cause: postcss.config.js missing from frontend root',
-        'Vite requires PostCSS config to process @tailwind directives',
-        'Added config file + full dev server restart resolved immediately',
-      ]
-    },
-    {
-      title: 'Word Document XML Corruption',
-      problem: [
-        'Generated .docx failed to open in Microsoft Word',
-        'python-docx could open it — only Word\'s stricter parser rejected it',
-        'XML appeared valid but had inconsistent border configuration',
-      ],
-      fix: [
-        'Inspected raw XML: outer borders set to none but inner borders set to single',
-        'Word requires border consistency — if outer is none, inner must also be none',
-        'Post-processed XML to fix all 35 instances before repacking archive',
-      ]
-    }
   ];
 
   return (
