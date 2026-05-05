@@ -64,7 +64,7 @@ const CaseStudy = () => {
               className="flex items-center gap-2 text-sm border border-slate-700 hover:border-coral-500 px-4 py-2 rounded transition-colors">
               <Github size={15} /> View Code
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
+            <a href="https://joblens-ai.vercel.app" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm bg-coral-500 hover:bg-coral-600 text-white px-4 py-2 rounded transition-colors">
               <ExternalLink size={15} /> Live Demo
             </a>
@@ -549,7 +549,7 @@ const CaseStudy = () => {
               className="flex items-center gap-2 border border-slate-600 hover:border-coral-500 px-6 py-3 rounded transition-colors">
               <Github size={18} /> Review the Implementation
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
+            <a href="https://joblens-ai.vercel.app" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 bg-coral-500 hover:bg-coral-600 text-white px-6 py-3 rounded transition-colors">
               <ExternalLink size={18} /> Try the Live Demo
             </a>

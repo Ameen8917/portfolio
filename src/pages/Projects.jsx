@@ -15,7 +15,7 @@ const Projects = () => {
         'RAG architecture with MongoDB Vector Search'
       ],
       githubUrl: 'https://github.com/Ameen8917/Joblens-AI',
-      liveUrl: '#'
+      liveUrl: 'https://joblens-ai.vercel.app'
     },
     // {
     //   title: '📞 VoiceDesk — AI Voice Personal Assistant',
@@ -42,7 +42,7 @@ const Projects = () => {
         'RESTful API architecture'
       ],
       githubUrl: 'https://github.com/Ameen8917/task-management-app',
-      liveUrl: '#'
+      liveUrl: 'https://task-management-app-kappa-dun.vercel.app'
     },
     // {
     //   title: '📱 Habit Tracker',

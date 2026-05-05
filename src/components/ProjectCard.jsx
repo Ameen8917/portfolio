@@ -42,10 +42,15 @@ const ProjectCard = ({
           </a>
         )}
         {liveUrl && (
-          <button className="border border-gray-600 hover:border-coral-500 px-4 py-2 rounded text-sm flex items-center gap-2">
+          <a 
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-gray-600 hover:border-coral-500 px-4 py-2 rounded text-sm flex items-center gap-2"
+          >
             <ExternalLink size={16} />
             Live Demo
-          </button>
+          </a>
         )}
       </div>
     </div>
